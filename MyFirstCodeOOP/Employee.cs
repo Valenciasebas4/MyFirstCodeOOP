@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
+using MyFirstCodeOOP.Class;
 
 namespace MyFirstCodeOOP
 {

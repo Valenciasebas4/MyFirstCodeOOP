@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Reflection.Metadata.Ecma335;
 
-namespace MyFirstCodeOOP
+namespace MyFirstCodeOOP.Class
 {
     public class Date
     {
@@ -16,8 +17,9 @@ namespace MyFirstCodeOOP
         {
             _year = ValidateYear(year);
             _month = ValidateMonth(month);
-            _day = ValidateDay(year, month, day);             
+            _day = ValidateDay(year, month, day);
         }
+
         #endregion
 
         #region Methods
@@ -28,12 +30,12 @@ namespace MyFirstCodeOOP
             {
                 return year;
             }
-            
-            throw new YearException(String.Format("The year {0} is invalid.", year));
+
+            throw new YearException(string.Format("The year {0} is invalid.", year));
         }
 
         private int ValidateDay(int year, int month, int day)
-        {           
+        {
             if (month == 2 && day == 29 && IsLeapYear(year))
             {
                 return day;
@@ -45,7 +47,7 @@ namespace MyFirstCodeOOP
                 return day;
             }
 
-            throw new DayException(String.Format("The day {0} doesn't exist for month {1}.", day, month));
+            throw new DayException(string.Format("The day {0} doesn't exist for month {1}.", day, month));
         }
 
         private int ValidateMonth(int month)
@@ -55,12 +57,16 @@ namespace MyFirstCodeOOP
                 return month;
             }
 
-            throw new MonthException(String.Format("The month {0} is invalid.", month));
+            throw new MonthException(string.Format("The month {0} is invalid.", month));
         }
 
         public override string ToString()
+            
         {
-            return String.Format("{0:00}/{1:00}/{2:00}", _year, _month, _day);
+            var dateConcatenated = string.Format("{0:00}/{1:00}/{2:00}", _year, _month, _day);
+
+
+            return dateConcatenated;
         }
 
         private bool IsLeapYear(int year)

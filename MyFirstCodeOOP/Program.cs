@@ -1,4 +1,5 @@
-﻿using MyFirstCodeOOP.Helper;
+﻿using MyFirstCodeOOP.Class;
+using MyFirstCodeOOP.Helper;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace MyFirstCodeOOP
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {

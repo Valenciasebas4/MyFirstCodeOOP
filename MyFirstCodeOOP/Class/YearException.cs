@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace MyFirstCodeOOP
+namespace MyFirstCodeOOP.Class
 {
     [Serializable]
     internal class YearException : Exception
