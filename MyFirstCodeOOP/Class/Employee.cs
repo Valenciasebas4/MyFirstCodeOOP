@@ -22,6 +22,8 @@ namespace MyFirstCodeOOP
 
         public override string ToString()
         {
+
+            /*
             return String.Format(
                 "-------EMPLOYEE-------\n\t" +
                 "Id.................{0}\n\t" +
@@ -36,14 +38,14 @@ namespace MyFirstCodeOOP
                 BirthDate,
                 HiringDate,
                 IsActive);
-
-            //return $"------EMPLOYEE------\n\t" +
-            //    $"ID: {Id} \n\t " +
-            //    $"First Name: {FirstName} \n\t " +
-            //    $"Last Name: {LastName} \n\t " +
-            //    $"Birth date: {BirthDate} \n\t " +
-            //    $"Hiring Date: {HiringDate} \n\t " +
-            //    $"Is Active? {IsActive}";
+            */
+            return $"------INFORMACIÒN DEL EMPLEADO------\n\t" +
+                $"ID: {Id} \n\t " +
+                $"First Name: {FirstName} \n\t " +
+                $"Last Name: {LastName} \n\t " +
+                $"Birth date: {BirthDate} \n\t " +
+                $"Hiring Date: {HiringDate} \n\t " +
+                $"Is Active? {IsActive}";
         }
 
         #endregion

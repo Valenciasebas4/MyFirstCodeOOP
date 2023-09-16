@@ -36,6 +36,7 @@ namespace MyFirstCodeOOP.Class
 
         private int ValidateDay(int year, int month, int day)
         {
+            // Valido si el día pertenece a un año bisiesto
             if (month == 2 && day == 29 && IsLeapYear(year))
             {
                 return day;
